@@ -59,7 +59,44 @@
         </div>
     </nav>
 
-<!--create member sign-in modal-->
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Member Sign-in</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Email"/>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPwd">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPwd" placeholder="Password"/>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMeBox"/>
+                                        <label for="rememberMeBox" class="form-check-label">Remember Me</label>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-success btn-sm ml-1">Sign In</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="row row-content mt-2">
         <div class="col-sm text-center">
@@ -67,8 +104,8 @@
             <p>Become a BeanHead member today and experience a new way to cafe.</p>
         </div>
     </div>
-<!--carousel centering issue on xl screens...also add indicators and arrows-->
-    <div class="row row-content">
+<!--More pics?-->
+    <div class="row">
         <div class="col-sm-8 mx-auto">
             <div id="indexCarouselSlides" class="carousel slide hidden-sm-down" data-ride="carousel">
                 <div class="carousel-inner">
@@ -85,34 +122,64 @@
                         <img class="d-block w-100 carousel-image" src="images/drinks/lattes-wds.jpg" alt="Fourth Slide"/>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#indexCarouselSlides" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#indexCarouselSlides" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="row row-content mt-2">
-        <div class="col-10 col-md-8 col-lg-5 mx-auto">
-            <div class="card">
-                <h4 class="card-header bg-dark text-white">
-                    Store Hours
-                </h4>
-                <div class="card-body">
-                    <dl class="row">
-                        <dt class="col-6">Sunday:</dt>
-                        <dd class="col-6">6:00am to 7:00pm</dd>
-                        <dt class="col-6">Monday:</dt>
-                        <dd class="col-6">6:00am to 7:00pm</dd>
-                        <dt class="col-6">Tuesday:</dt>
-                        <dd class="col-6">6:00am to 7:00pm</dd>
-                        <dt class="col-6">Wednesday:</dt>
-                        <dd class="col-6">6:00am to 7:00pm</dd>
-                        <dt class="col-6">Thursday:</dt>
-                        <dd class="col-6">6:00am to 7:00pm</dd>
-                        <dt class="col-6">Friday:</dt>
-                        <dd class="col-6">6:00am to 7:00pm</dd>
-                        <dt class="col-6">Saturday</dt>
-                        <dd class="col-6">6:00am to 7:00pm</dd>
-                    </dl>
+    <div class="container">
+        <div class="row row-content mt-2">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-5 col-xl-4 mx-auto">
+                <div class="card">
+                    <h4 class="card-header bg-dark text-white">
+                        Store Hours
+                    </h4>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Sunday:</dt>
+                            <dd class="col-6">6:00am to 7:00pm</dd>
+                            <dt class="col-6">Monday:</dt>
+                            <dd class="col-6">5:00am to 8:00pm</dd>
+                            <dt class="col-6">Tuesday:</dt>
+                            <dd class="col-6">5:00am to 8:00pm</dd>
+                            <dt class="col-6">Wednesday:</dt>
+                            <dd class="col-6">5:00am to 8:00pm</dd>
+                            <dt class="col-6">Thursday:</dt>
+                            <dd class="col-6">5:00am to 8:00pm</dd>
+                            <dt class="col-6">Friday:</dt>
+                            <dd class="col-6">5:00am to 9:00pm</dd>
+                            <dt class="col-6">Saturday</dt>
+                            <dd class="col-6">5:00am to 9:00pm</dd>
+                        </dl>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="newsletterSignUp" class="col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto form text-center mt-2 p-2">
+                <h3>Sign up for our newsletter!</h3>
+                <p>Get weekly updates on deals and special discounts just for signing up!</p> 
+                    <form class ="justify-content-center">
+                            <div class="form-group px-4">           
+                                <input type="text" class="form-control" id="newsletterName" placeholder="Enter Name"/>
+                            </div>
+                            <div class="form-group px-4">
+                                <input type="email" class="form-control" id="newsletterEmail" aria-describedby="emailHelp"
+                                placeholder="Enter Email"/>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with another party</small>
+                            </div>
+                                <button type="submit" role="button" class="btn btn-secondary">Submit</button>
+                    </form>
             </div>
         </div>
     </div>

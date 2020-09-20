@@ -1,10 +1,10 @@
-#signInBtn {
-    margin-left: 5px;
+.jumbotron {
+    background-image: linear-gradient(to right, white, lightgrey);
 }
 
 h3 {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: green;
+    color:#5cb85c;
 }
 
 p {
@@ -21,3 +21,28 @@ p {
 .carousel { 
     max-width:700px; 
     max-height:px; }
+
+.carousel-inner img {
+    margin: auto;
+}
+
+#indexCarouselSlides {
+    margin: 0 auto;
+}
+
+#newsletterSignUp {
+    background-color: rgba(57,55, 55, .10);
+}
+
+#newsletterSignUp p {
+    color: black;
+}
+
+.article-img {
+    height: 250px;
+}
+
+article {
+    
+}
+
