@@ -41,3 +41,12 @@ p {
 .article-img {
     height: 250px;
 }
+
+.feedbackForm {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.feedbackForm Form {
+    padding: 20px;
+}
