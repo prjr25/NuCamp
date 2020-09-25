@@ -45,8 +45,41 @@ p {
 .feedbackForm {
     border: 2px solid;
     border-radius: 10px;
+    background-color: #5cb85c
 }
 
-.feedbackForm Form {
+.feedbackForm form {
     padding: 20px;
+}
+
+.feedbackForm label {
+    color: white;
+    font-weight: bold;
+}
+
+.map-container-6{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-container-6 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.contactus-card {
+    background-color: #5cb85c
+}
+
+.contactus-card h2 {
+    color: white;
+}
+
+.md-form label {
+    font-weight: bold;
 }

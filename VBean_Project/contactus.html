@@ -59,6 +59,8 @@
         </div>
     </nav>
 
+    <section>
+    
     <div class="row row-content mt-2">
         <div class="col-sm text-center">
             <h3>We would love to hear from you!</h3>
@@ -67,31 +69,80 @@
     </div>
 
     <div class="container">
-        <div class="feedbackForm">
-            <form>
-                <div class="form-group col-md-6">
-                    <label for="feedbackFn">First Name</label>
-                    <input type="text" class="form-control" id="feedbackFn" placeholder="Enter First Name"/>
+        <div class="row mt-4">
+
+            <!--Grid column-->
+            <div class="col-lg-5 mb-4">
+                <div class="card contactus-card">
+                    <div class="card-body">
+
+                        <div class="form-header blue accent-1">
+                            <h2><i class="fa fa-envelope"></i> Feedback</h2>
+                        </div>
+        
+                        <div class="md-form">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" id="feedback-name" class="form-control">
+                            <label for="feedback-name">Your name</label>
+                        </div>
+            
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input type="text" id="feedback-email" class="form-control">
+                            <label for="feedback-email">Your email</label>
+                        </div>
+            
+                        <div class="md-form">
+                            <i class="fa fa-calendar prefix grey-text"></i>
+                            <input type="date" id="feedback-date" class="form-control">
+                            <label for="feedback-date">Date of visit</label>
+                        </div>
+        
+                        <div class="md-form">
+                            <i class="fa fa-pencil prefix grey-text"></i>
+                            <textarea id="feedback-text" class="form-control md-textarea" rows="4"></textarea>
+                            <label for="feedback-text">Feedback</label>
+                        </div>
+            
+                        <div class="text-center mt-4">
+                            <button class="btn btn-secondary btn-lg">Submit</button>
+                        </div>    
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="feedbackLn">Last Name</label>
-                    <input type="text" class="form-control" id="feedbackLn" placeholder="Enter Last Name"/>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-7">
+        
+                <!--Google map-->
+                <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+                    <iframe src="https://maps.google.com/maps?q=las%20vegas&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>    
+                <br/>
+                <!--Buttons-->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                    <a class="btn btn-secondary accent-1"><i class="fa fa-map-marker"></i></a>
+                    <p>Las Vegas, NV 89142</p>
+                    <p>United States</p>
+                    </div>
+            
+                    <div class="col-md-4">
+                    <a class="btn btn-secondary accent-1"><i class="fa fa-phone"></i></a>
+                    <p>702-292-9770</p>
+                    </div>
+        
+                <div class="col-md-4">
+                <a class="btn btn-secondary accent-1"><i class="fa fa-envelope"></i></a>
+                <p>info@vbean.com</p>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="feedbackEmail">Email</label> 
-                    <input type="email" class="form-control" id="feedbackEmail" placeholder="Enter Email Address"/>
-                </div> 
-                <div class="form-group col-md-6">
-                    <label for="feedbackDate">Date of Visit</label>
-                    <input type="date" class="form-control" id="feedbackDate">
-                </div>
-                <div class="form-group">
-                    <label for="feedbackTextBox">Your Feedback</label>
-                    <!--Unable to create textarea tag-->
-                </div>        
-            </form>
+            </div>
+        
+            </div>    
         </div>
     </div>
+
+    </section>
 
     <hr/>
     <footer>
