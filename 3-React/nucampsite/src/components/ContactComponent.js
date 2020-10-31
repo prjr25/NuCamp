@@ -86,24 +86,26 @@ class Contact extends Component {
                             <Row className="form-group">
                                 <Label htmlFor="firstName" md={2}>First Name</Label>
                                 <Col md={10}>
-                                    <Control.text model=".firstName" id="firstName" name="firstName"
+                                <Control.text model=".firstName" id="firstName" name="firstName"
                                         placeholder="First Name"
                                         className="form-control"
                                         validators={{
-                                            required,
+                                            required, 
                                             minLength: minLength(2),
                                             maxLength: maxLength(15)
-                                        }} />
-                                        <Errors 
-                                            className="text-danger"
-                                            model=".firstName"
-                                            show="touched"
-                                            component="div"
-                                            messages={{
-                                                required: 'Required',
-                                                minLength: 'Must be at least 2 characters',
-                                                maxLength: 'Must be 15 characters or less'
-                                            }} />
+                                        }}
+                                    />
+                                    <Errors
+                                        className="text-danger"
+                                        model=".firstName"
+                                        show="touched"
+                                        component="div"
+                                        messages={{
+                                            required: 'Required',
+                                            minLength: 'Must be at least 2 characters',
+                                            maxLength: 'Must be 15 characters or less'
+                                        }}
+                                    />                                      
                                 </Col>
                             </Row>
                             <Row className="form-group">
