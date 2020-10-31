@@ -93,6 +93,7 @@ import { Link } from 'react-router-dom';
         }
     
         handleSubmit(values) {
+            this.toggleModal();
             console.log("Current state is: " + JSON.stringify(values));
             alert("Current state is: " + JSON.stringify(values));
         } 
