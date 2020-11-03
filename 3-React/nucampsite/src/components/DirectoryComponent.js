@@ -48,4 +48,4 @@ function Directory(props) {
 }
 
 
-export default Directory
+export default Directory;
